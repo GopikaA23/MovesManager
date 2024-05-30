@@ -8,18 +8,22 @@ const HouseDetails = ({ detail }) => {
         <Grid container justifyContent="space-between">
           <Grid item>
             <Typography variant="h6" fontWeight="bold">House Details</Typography>
+
+            {/* old house details */}
             <Typography variant="h6" color="orangered" fontWeight="bold" sx={{ marginTop: 2 }}>Existing House Details</Typography>
-            <Typography variant="h6">Floor No.</Typography>
+            <Typography variant="h7" fontWeight="bold">Floor No.</Typography>
             <Typography variant="subtitle1">{detail.old_floor_no}</Typography>
-            <Typography variant="h6">Elevator Available.</Typography>
+            <Typography variant="h7" fontWeight="bold">Elevator Available.</Typography>
             <Typography variant="subtitle1">{detail.old_elevator_availability}</Typography>
 
+            {/* new house details */}
             <Typography variant="h6" color="orangered" fontWeight="bold" sx={{ marginTop: 2 }}>New House Details</Typography>
-            <Typography variant="h6">Floor No.</Typography>
+            <Typography variant="h7" fontWeight="bold">Floor No.</Typography>
             <Typography variant="subtitle1">{detail.new_floor_no}</Typography>
-            <Typography variant="h6">Elevator Available.</Typography>
+            <Typography variant="h7" fontWeight="bold">Elevator Available.</Typography>
             <Typography variant="subtitle1">{detail.new_elevator_availability}</Typography>
           </Grid>
+          
           <Grid item>
             <Button variant="contained" sx={{ width: 200, backgroundColor: "black" }}>Edit House Details</Button>
           </Grid>

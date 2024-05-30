@@ -5,14 +5,17 @@ import InventoryDetails from "./InventoryDetails";
 
 const ViewMoveDetails = ({ detail }) => {
   return (
-    <div style={{ margin: '20px 0' }}> {/* Adding margin for spacing */}
-      <AdditionalInfo />
-      <div style={{ margin: '20px 0' }}> {/* Adding margin for spacing */}
-        <HouseDetails detail={detail} />
+    <div style={{ margin: '20px 0' }}> 
+      <AdditionalInfo />     {/* Additional information page */}
+
+      <div style={{ margin: '20px 0' }}> 
+        <HouseDetails detail={detail} />   {/* HouseDetails  page */}
       </div>
-      <div style={{ margin: '20px 0' }}> {/* Adding margin for spacing */}
-        <InventoryDetails detail={detail} />
+
+      <div style={{ margin: '20px 0' }}> 
+        <InventoryDetails detail={detail} />  {/* Inventory details page */}
       </div>
+
     </div>
   );
 }
